@@ -1,0 +1,164 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS for header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    font-family: 'Arial', sans-serif;
+    color: #00B095;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CSS for image div */
+.image img {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* CSS for today div */
+.today {
+    margin: 0 20px;
+}
+
+/* CSS for contact div */
+.contact {
+    margin-left: auto;
+}
+
+/* CSS for anchor tags */
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CSS for form section */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 60px; /* Add more space between form and other sections */
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #00B095;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #008277;
+}
+
+/* CSS for newsletter section */
+.newsletter {
+    border: 2px solid #00B095;
+    border-radius: 5px;
+    padding: 40px;
+    margin-top: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+#newsletterForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletterForm label {
+    margin-bottom: 10px;
+}
+
+#newsletterForm input[type="email"] {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#newsletterForm button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #00B095;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newsletterForm button[type="submit"]:hover {
+    background-color: #008277;
+}
+
+/* CSS for UV Index Scale section */
+.uv-index-scale {
+    padding: 40px;
+    margin-top: 60px; /* Add more space between newsletter and UV Index Scale sections */
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.uv-index-scale h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: darkblue; /* Dark blue color for headings */
+}
+
+.uv-index-level {
+    margin-bottom: 20px;
+}
+
+.uv-index-level h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: darkblue; /* Dark blue color for headings */
+}
+
+.uv-index-level p {
+    color: black; /* Black color for text */
+}

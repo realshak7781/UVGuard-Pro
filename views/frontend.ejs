@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinates to UV Index</title>
+    <link rel="stylesheet" href="styles/frontend.css">
+</head>
+<body>
+   
+    <div class="header">
+        <div class="image">
+            <img src="images/suncreen.avif" alt="">
+        </div>
+        <div class="today">
+            <span>Today's UV Index</span>
+        </div>
+        <div class="contact">
+            <a href="mailto:akhtersharique@gmail.com">Contact Us</a>
+        </div>
+    </div>
+
+    <form id="coordinatesForm" action="/api/uv-index" method="POST">
+        <label for="latitudeInput">Enter latitude:</label>
+        <input type="text" id="latitudeInput" name="latitude" required>
+        <label for="longitudeInput">Enter longitude:</label>
+        <input type="text" id="longitudeInput" name="longitude" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="newsletter">
+        <h2>Join our newsletter</h2>
+        <p>Become a Project Sunscreen insider and get updates on new products, special offers and more, delivered right to your inbox.</p>
+        <form id="newsletterForm">
+            <label for="emailInput">Enter your email:</label>
+            <input type="email" id="emailInput" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <div class="uv-index-scale">
+        <h2>UV Index Scale</h2>
+        <div class="uv-index-level">
+            <h3>0 to 2: Low (green)</h3>
+            <p>You can safely stay outside using standard daily sun protection: broad spectrum SPF 30+ sunscreen containing zinc, sunglasses, and hat. Don't forget: in winter, reflection off snow can nearly double UV strength.</p>
+        </div>
+        <div class="uv-index-level">
+            <h3>3 to 5: Moderate (yellow)</h3>
+            <p>Stay in the shade during late morning through mid-afternoon. Wear broad spectrum SPF 30+ sunscreen containing zinc, sunglasses, and hat.</p>
+        </div>
+        <div class="uv-index-level">
+            <h3>6 to 7: High (orange)</h3>
+            <p>Stay in the shade as much as possible, especially during late morning through mid-afternoon. Wear broad spectrum SPF 30+ sunscreen containing zinc, protective clothing (long-sleeved shirt and pants), sunglasses, and wide-brimmed hat.</p>
+        </div>
+        <div class="uv-index-level">
+            <h3>8 to 10: Very High (red)</h3>
+            <p>Extra protection needed. Be careful outside, especially during late morning through mid-afternoon. Stay in the shade as much as possible, especially during late morning through mid-afternoon. Wear broad spectrum SPF 30+ sunscreen containing zinc, protective clothing (long-sleeved shirt and pants), sunglasses, and wide-brimmed hat. Please note: white sand on the beach will reflect UV rays and can double UV exposure.</p>
+        </div>
+        <div class="uv-index-level">
+            <h3>11 or more: Extreme (purple)</h3>
+            <p>Extra protection needed. Avoid sun exposure during late morning through mid-afternoon. Unprotected skin and eyes can burn in minutes. Wear broad spectrum SPF 30+ sunscreen containing zinc, protective clothing (like long-sleeves), sunglasses, and wide-brimmed hat. Please note: white sand on the beach will reflect UV rays and can double UV exposure.</p>
+        </div>
+    </div>
+</body>
+</html>
