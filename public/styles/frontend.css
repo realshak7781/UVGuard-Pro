@@ -162,3 +162,90 @@ button[type="submit"]:hover {
 .uv-index-level p {
     color: black; /* Black color for text */
 }
+
+/* Existing CSS goes here */
+
+/* CSS for footer */
+.footer {
+    background: #142d4c; /* Footer background color */
+    color: white; /* Text color */
+    padding: 40px 20px; /* Padding */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 30px; /* Add space above the footer */
+}
+
+/* CSS for footer connect section */
+.footer-connect {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below connect section */
+}
+
+.footer-connect .social-link {
+    margin: 0 10px; /* Space between social links */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.footer-connect .social-link:hover {
+    color: #00B095; /* Hover color */
+}
+
+/* CSS for footer newsletter section */
+.footer-newsletter {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below newsletter section */
+}
+
+.footer-newsletter h2 {
+    font-size: 24px; /* Font size */
+    margin-bottom: 10px; /* Space below heading */
+    color: #00B095; /* Heading color */
+}
+
+.footer-newsletter p {
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+#footerNewsletterForm {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+#footerNewsletterForm label {
+    margin-bottom: 10px; /* Space between label and input */
+}
+
+#footerNewsletterForm input[type="email"] {
+    width: 300px; /* Input width */
+    padding: 8px; /* Input padding */
+    margin-bottom: 10px; /* Space below input */
+    border: 1px solid #ccc; /* Input border */
+    border-radius: 5px; /* Input border radius */
+}
+
+#footerNewsletterForm button[type="submit"] {
+    padding: 10px 20px; /* Button padding */
+    background-color: #00B095; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+#footerNewsletterForm button[type="submit"]:hover {
+    background-color: #008277; /* Hover background color */
+}
+
+/* CSS for footer signature */
+.footer-signature {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space above signature */
+    color: #ccc; /* Signature color */
+}
