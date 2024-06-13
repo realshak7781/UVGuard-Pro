@@ -3,11 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UV Index Result</title>
+    <title>UVGuard Pro - UV Index Result</title>
+    <link rel="stylesheet" href="/styles/frontend.css">
 </head>
 <body>
-    <h1>UV Index Result</h1>
-    <p>The UV Index at the provided location is: <%= uvIndex %></p>
-    <a href="/">Go back</a>
+    <div class="header">
+        <div class="image">
+            <!-- Wrap the logo image in an anchor tag to make it a clickable button -->
+            <a href="/">
+                <img src="/images/suncreen.avif" alt="UVGuard Pro Logo">
+            </a>
+        </div>
+        <div class="today">
+            <span>Today's UV Index</span>
+        </div>
+        <div class="contact">
+            <a href="mailto:akhtersharique@gmail.com">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="uv-result">
+            <h2>Today's UV Index: <%= uvIndex %></h2>
+            <p class="uv-message">
+                <% if (uvIndex >= 3) { %>
+                    The UV index is <%= uvIndex %>. You should apply sunscreen today to protect your skin.
+                <% } else { %>
+                    The UV index is <%= uvIndex %>. You don't need to apply sunscreen today, but always take precautions.
+                <% } %>
+            </p>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <h2>Join our newsletter</h2>
+        <p>Become a Project Sunscreen insider and get updates on new products, special offers and more, delivered right to your inbox.</p>
+        <form id="newsletterForm" action="/api/newsletter" method="POST">
+            <label for="emailInput">Enter your email:</label>
+            <input type="email" id="emailInput" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-connect">
+            <span>Connect with us:</span>
+            <a href="https://www.instagram.com" target="_blank" class="social-link">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank" class="social-link">Twitter</a>
+        </div>
+
+        <div class="footer-newsletter">
+            <h2>Join our newsletter</h2>
+            <p>Become a Project Sunscreen insider and get updates on new products, special offers and more, delivered right to your inbox.</p>
+            <form id="footerNewsletterForm" action="/api/newsletter" method="POST">
+                <label for="footerEmailInput">Enter your email:</label>
+                <input type="email" id="footerEmailInput" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-signature">
+            <p>@created_by_sharique</p>
+        </div>
+    </div>
 </body>
 </html>

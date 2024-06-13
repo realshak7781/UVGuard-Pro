@@ -249,3 +249,20 @@ button[type="submit"]:hover {
     margin-top: 20px; /* Space above signature */
     color: #ccc; /* Signature color */
 }
+.uv-result {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #00B095;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto; /* Center horizontally and add margin on top and bottom */
+}
+
+.uv-result h2 {
+    color: #142d4c; /* Dark blue for UV index title */
+}
+
+.uv-message {
+    color: black; /* Black for UV index message */
+}

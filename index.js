@@ -18,6 +18,7 @@ app.set('view engine', 'ejs');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+
 app.get("/", (req, res) => {
     res.render("frontend");
 });
